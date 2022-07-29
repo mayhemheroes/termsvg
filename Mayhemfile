@@ -1,16 +1,12 @@
 # Namespaced project name that the target belongs to
-project: bmwtsn098/termsvg-test
+project: termsvg
 
 # Target name (should be unique within the project)
-target: termsvg-test
+target: termsvg
 
-# Base image to run the binary in.
-image: ghcr.io/bmwtsn098/termsvg:latest
-duration: 300
 # List of commands used to test the target
 cmds:
 
     # Command used to start the target, "@@" is the input file
     # (when "@@" is omitted Mayhem defaults to stdin inputs)
     - cmd: ./main play @@
-    - cmd: ./main export @@
